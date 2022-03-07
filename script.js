@@ -27,11 +27,12 @@ function playRound(playerSelection, computerSelection) {
     return `Computer wins, ${computer} beats ${player}! Score is currently - Player:${playerWins} Computer:${computerWins}`
 }
 
+const numPlayTo = +prompt("What do you want to play to?");
 const playerChoice = prompt("What would you like to play? Please enter rock, paper, or scissors.");
 
-function game(i=0) {
-    if(i === 5) return;
+function game() {
+    if(playerWins === numPlayTo || computerWins === numPlayTo) return;
     console.log(playRound(playerChoice, computerPlay()));
-    return game(i+1);
+    return game();
 }
 console.log(game())
