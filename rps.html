@@ -5,9 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="rpsContainer">
+            <div class="rock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+                <h1>Rock</h1>
+            </div>
+            <div class="paper">
+                <i class="fa-solid fa-hand"></i>
+                <h1>Paper</h1>
+            </div>
+            <div class="scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <h1>Scissors</h1>
+            </div>
+        </div>
+
+        <div class="startContainer">
+            <input class="rounds" type="number">
+            <button class="startGame">START</button>
+        </div>
+        
+        <div class="roundsContainer">
+            <h2>Rounds: <span class="numberRounds">0</span></h2>
+            <h2>Round Winner: <span class="roundWinner"></span></h2>
+            <h2>Computer Choice: <span class="compChoice"></span></h2>
+        </div>
+
+        <div class="scoreContainer">
+            <h3 class="computerScore">Computer Score: <span class="compScore">0</span></h3>
+            <h3 class="playerScore">Player Score: <span class="playScore">0</span></h3>
+        </div>
+        <div class="win">
+            <h3 class="winner"></h3>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
